@@ -1,0 +1,33 @@
+body
+{
+    background-color: grey;
+}
+
+#ttl
+{
+    color: lightgreen;
+    text-align: center;
+}
+
+.blue
+{
+    color: blue;
+}
+
+.red
+{
+    color: red;
+}
+
+.borders
+{
+    border: 2.5px solid black;
+    border-radius: 10px;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+.secondBorder
+{
+    border: 1px solid black;
+}
