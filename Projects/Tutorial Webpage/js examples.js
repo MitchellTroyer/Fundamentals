@@ -1,6 +1,6 @@
+let animalArray = ['dog', 'cat', 'snake'];
+//                   0      1        2
 
-for (x = 0; x <= 105; x++) 
-{
-    console.log(x);
-}
-    
+
+
+
