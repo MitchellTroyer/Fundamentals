@@ -1,0 +1,39 @@
+.inp
+{
+  background-color: blue;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  margin-right: 520px;
+  margin-left: 400px;
+  color: white;
+  border-radius: 3px;
+  border: 5px double black;
+}
+
+#in1
+{
+  margin-top: 15px;
+  margin-right: 56px;
+}
+
+#in2
+{
+  margin-right: 58px;
+}
+
+body
+{
+  background-color: lightblue;
+}
+
+#signUp
+{
+  padding-top: 20px;
+  padding-left: 111px;
+}
+
+#buttonOne
+
+{
+  margin-left: 111px;
+}
