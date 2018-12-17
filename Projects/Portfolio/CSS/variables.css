@@ -10,6 +10,10 @@
     --brown: #8c7a51;
     --grey: #53565A;
     --black: #272727;
+    --m: rgba(23, 93, 146, 0.75);
+    --white: #ffffff;
+    --brown: #754A33;
+    --lightbrown: #948368;
 
-    --mainFont: 'Oswald', sans-serif;
+    --Oswald: 'Oswald', sans-serif;
 }
