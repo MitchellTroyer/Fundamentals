@@ -1,0 +1,5 @@
+{
+  "projects": {
+    "default": "dnd-creature-generator-api"
+  }
+}
