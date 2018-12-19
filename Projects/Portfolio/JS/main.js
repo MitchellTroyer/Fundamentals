@@ -15,3 +15,8 @@ function tabbing(aEvent, tabName)
   }
 
   document.getElementById("default").click();
+
+  function alerted(eEvent, alertTab)
+  {
+    alert("You found it!");
+  }

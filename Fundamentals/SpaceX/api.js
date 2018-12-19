@@ -3,11 +3,11 @@ const baseURL = 'https://api.spacexdata.com/v2/rockets';
 const searchForm = document.querySelector('form');
 const spaceShips = document.querySelector('ul');
 
-searchForm.addEventListener('submit', fetchSpace);
+searchForm.addEventListener('submit', fetchSpace); //listen for someone to sumbit
 
 function fetchSpace(e)
 {
-    e.preventDefault();
+    e.preventDefault();  
     fetch(baseURL)//gets the infromation
     .then(result =>
     {
@@ -25,13 +25,13 @@ function displayRockets(json)
     let rockets = json.forEach(r => 
         {
             let rocket = document.createElement('li');
-            let firstFLight = document.createElement('li');
-            let engines = document.createElement('li');
+            //let firstFLight = document.createElement('li');
+            //let engines = document.createElement('li');
             rocket.innerText = r.name;
-            firstFLight.innerText = r.first_flight;
-            engines.innerText = r.type;
+            //firstFLight.innerText = r.first_flight;
+            //engines.innerText = r.type;
             spaceShips.appendChild(rocket);//grab names
-            spaceShips.appendChild(firstFLight);
-            spaceShips.appendChild(engines);
+            //spaceShips.appendChild(firstFLight);
+            //spaceShips.appendChild(engines);
         })
 }

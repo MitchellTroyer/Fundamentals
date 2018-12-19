@@ -3,7 +3,7 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/main.css">
-    <title>Portfolio</title>
+    <title>Mitch's Portfolio</title>
 </head>
 <body>
      <!--jumbotron-->
@@ -18,15 +18,21 @@
         <div class="body">
             <h2>About Me</h2>
             <hr>
-            
             <hr>
+            <img src="./Assets/img/IMG_2832 copy.JPG" width="200px" height="200px;" id="me">
+            <p>Previous I spent 2 years at Grace College & Seminary for Information Systems. Currently studying at Eleven Fifty Academy for JavaScript, HTML, and CSS. <br>I live in Danville, IN as I have for 15 years. My hobbies include digital entertainment and traveling. Often I would look at a webpage or a game and wornder what went into it to make it work the way it does, so in highschool I took a basic Java and an HTML course. It is my goal to learn different coding langauges and do with them whatever I can develop wether its building websites and 8-bit games or databases and immersive games.</p>
         </div>
       </div>
       
       <div id="resume" class="contents"><!--resume page-->
         <div class="body">
-
-        </div>
+            <h2>My Resume</h2>
+            <hr>
+            <hr>
+            <a href="https://docs.google.com/document/d/1_O2MO4B8p-elb8vYmHx_Dpw7dnGI-VQ2LXrF46sv708/edit?usp=sharing" id="myResume">Click Here to view my Resume</a>
+            <br>
+            <img src="./Assets/img/Screenshot 2018-12-18 21.05.53.jpg" width="255" height="305" id="resPic">
+          </div>
       </div>
 
       <div id="creations" class="contents"><!--My Creations-->
@@ -35,18 +41,23 @@
             <hr>
             <a href="https://codepen.io/MitchellTroyer/pen/VVNYqW" class="myC">Code Pen - See Code Here</a>
             <hr>
-            <img src="./Assets/img/snowMan.png" width="200" height="200"></a>
+            <img src="./Assets/img/snowMan.png" width="200" height="200" id="imgPen">
+            <hr>
+            <a href="/Projects/API/API.html" class="myC">D&D API - Click Here</a>
+            <hr>
+            <img src="./Assets/img/Screenshot 2018-12-19 10.59.51.jpg" width="350" height="300" id="dndImg">
         </div>
       </div>
 
       <div id="contact" class="contents"><!--Contact Me-->
         <div id="contactMe">
+
                 <!--formspree-->
           <section id="about"></section>
           <section id="portfolio"></section>
           <section id="contact">
             <div class="container">
-              <h2 class="text-center text-uppercase">Contact Me</h2>
+              <h2 class="text-center text-uppercase">If you have any questions or comments feel free to Contact Me</h2>
               <div class="row">
                 <form action="https://formspree.io/MTroyer95@att.net" method="POST">
                 <div class="control-group">
@@ -100,10 +111,10 @@
         </div>
     
     <div class="sideBars" id="leftBar"><!--left side bar-->
-      <p>This is my outter shell to the  page which I used fixed positions and relative positions to organize the outter parts of the website. In between the sidebars is the main content for the site in which there is a series of divs. These I am able to switch on and off by a lines of JavaScript running behind the scenes and attach to the nav bar on the left.</p>
+      <p>This is my outter shell to the page which I used fixed positions and relative positions to organize the outter parts of the website. In between the sidebars is the main content for the site in which there is a series of divs. These I am able to switch on and off by a lines of JavaScript running behind the scenes and attach to the nav bar on the left.</p>
     </div>
     <div class="sideBars" id="rightBar"><!--right side bar-->
-      <p></p>
+      <p>If you like try and find the hidden alert. moving your mouse around you might find it!</p>
     </div>
 
     <!--Nav bar-->
@@ -115,9 +126,17 @@
                   <button class="tab" onclick="tabbing(event, 'creations')">My Creations</button>
                   <button class="tab" onclick="tabbing(event, 'contact')">Contact Me</button>
             </div>
+            <button id="hidden" onclick="alerted(event, 'alerted')"></button>
     </nav>
 
-<footer>Created by Mitchell Troyer <br> &copyMTWebPages <br> ElevenFifty Academy</footer>
+<div id="footer2"></div>
+<footer>
+  <a href="https://github.com/MitchellTroyer/Fundamentals" class="socialLink">GitHub</a> &vert;
+  <a href="https://www.linkedin.com/in/mitchell-troyer-049580177/" class="socialLink">LinkedIn</a>
+  <a href=""></a>
+  <br>
+  <p>Created by Mitchell Troyer <br> &copyMTWebPages <br> ElevenFifty Academy</p>
+</footer>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

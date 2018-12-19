@@ -23,7 +23,8 @@ searchForm.addEventListener('submit', fetchResults);
 nextBtn.addEventListener('click', nextPage);
 previousBtn.addEventListener('click', previousPage);
 
-function fetchResults(e) {
+function fetchResults(e) 
+{
   // console.log(e);
   e.preventDefault();
   url = `${baseURL}?api-key=${key}&page=${pageNumber}&q=${searchTerm.value}`;
@@ -73,7 +74,7 @@ function displayResults(json)
       let para = document.createElement('p');
       let clearfix = document.createElement('div');
 
-      let current = articles[i];
+      let current = articles[i];  
       console.log('Current:', current);
 
       link.href = current.web_url;
@@ -119,12 +120,16 @@ function nextPage(e) {
   console.log('Page Number:', pageNumber);
 }
 
-function previousPage(e) {
+function previousPage(e)
+ {
   // console.log('Previous button clicked');
-  if (pageNumber > 0) {
+  if (pageNumber > 0) 
+  {
     pageNumber--;
     fetchResults(e);
-  } else {
+  } 
+  else 
+  {
     return;
   }
   fetchResults(e);
